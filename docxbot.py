@@ -24,7 +24,7 @@ def handle(msg):
 		# download and store file in subdir
 		file = download(file_url)
 		file_name = msg['document']['file_name']
-		downloaded_file_path = './temp/' + file_name
+		downloaded_file_path = './temp/' + str(file)
 		system('mv -vf ' + file + ' ' + downloaded_file_path)
 
 		# open file and get ASCII data
