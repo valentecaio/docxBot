@@ -8,15 +8,15 @@ Content:
 
   This path should contain those files and subdirs:
 
-  docx2txt.py		===> module to extract ASCII data from docx file |||
+    docx2txt.py		===> module to extract ASCII data from docx file;
 
-  docxbot.py		===> main bot module |||
+    docxbot.py		===> main bot module;
 
-  testFile.docx	===> a .docx file that can be used to test the bot |||
+    testFile.docx	===> a .docx file that can be used to test the bot;
 
-  temp/		====> a subdir to stock temporally files |||
+    temp/		====> a subdir to stock temporally files;
 
-  token.txt		===> a simple text file with a bot token |||
+    token.txt		===> a simple text file with a bot token;
 
   
 
