@@ -22,10 +22,9 @@ def handle(msg):
 		file_url = 'https://api.telegram.org/file/bot' + TOKEN + '/' + file_path
 
 		# download and store file in subdir
-		file = download(file_url)
+		output_path = './temp/'
+		downloaded_file_path = download(file_url, out=output_path)
 		file_name = msg['document']['file_name']
-		downloaded_file_path = './temp/' + str(file)
-		system('mv -vf ' + file + ' ' + downloaded_file_path)
 
 		# open file and get ASCII data
 		answer = get_docx_text(downloaded_file_path)
