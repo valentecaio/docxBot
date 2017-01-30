@@ -3,7 +3,7 @@ import telepot
 import time
 from docx2txt import get_docx_text
 from wget import download
-#from os import system
+from os import system
 
 def handle(msg):
 	content_type, chat_type, chat_id = telepot.glance(msg)
@@ -33,7 +33,7 @@ def handle(msg):
 			answer = "I'm sorry but I found nothing in this file."
 
 		# delete used file
-		# system('rm -vf ' + downloaded_file_path)
+		system('rm -vf ' + downloaded_file_path)
 
 	else:
 		answer = "I'm sorry, I couldn't understand your command.\n" \
