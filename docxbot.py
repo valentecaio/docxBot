@@ -9,9 +9,9 @@ def handle(msg):
 	content_type, chat_type, chat_id = telepot.glance(msg)
 
 	answer = ''
-	help = "Hi, I can read docx files for you.\n" \
+	help = "Hi friend, I can read docx files for you.\n" \
 		   "To start, just send me a docx file.\n" \
-		   "I'll answer with the ASCII content of this file."
+		   "I'll answer with the content of this file."
 	if content_type == 'text' and\
 			('/start' in msg['text'] or '/help' in msg['text']):
 		answer = help
