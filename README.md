@@ -1,4 +1,4 @@
-# ${1:Telegram docx Reader Bot}
+# Telegram docx Reader Bot
 
 It's a Telegram bot written in Python, using [Telepot API](https://github.com/nickoala/telepot), which can read docx files.
 
